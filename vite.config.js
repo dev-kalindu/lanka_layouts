@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/lanka-layout_project/',
+  base: '/lanka_layout_project/',
 
 })
