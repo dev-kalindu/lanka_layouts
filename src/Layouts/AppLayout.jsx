@@ -23,7 +23,7 @@ function index() {
   });
   return (
     <div>
-      <div className="cursor-dot" data-cursor-dot></div>
+      <div className="cursor-dot d-none d-lg-block" data-cursor-dot></div>
       <a
         href="tel:+94771234567" // ✅ replace with your number
         className="call-btn d-flex align-items-center justify-content-center"
