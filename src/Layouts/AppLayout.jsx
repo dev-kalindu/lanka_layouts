@@ -25,7 +25,7 @@ function index() {
     <div>
       <div className="cursor-dot d-none d-lg-block" data-cursor-dot></div>
       <a
-        href="tel:+94771234567" // ✅ replace with your number
+        href="tel:+94771234567"
         className="call-btn d-flex align-items-center justify-content-center"
       >
         <FaPhoneAlt size={22} />
