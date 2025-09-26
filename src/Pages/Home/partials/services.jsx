@@ -17,7 +17,7 @@ function services() {
         </p>
         <div className="row g-4">
           <div className="col-md-4">
-            <div className="card shadow-sm h-100 rounded-4">
+            <div className="card shadow-sm h-100 rounded-4 text-center">
               <div className="card-body px-4 pb-4">
                 <div className="card-img text-center pb-5">
                     <img src="Images/blueprint.gif" width={100} alt="" />
@@ -34,7 +34,7 @@ function services() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card shadow-sm h-100 rounded-4">
+            <div className="card shadow-sm h-100 rounded-4 text-center">
               <div className="card-body px-4 pb-4">
                 <div className="card-img text-center pb-5">
                     <img src="Images/letter.gif" width={100} alt="" />
@@ -51,7 +51,7 @@ function services() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card shadow-sm h-100 rounded-4">
+            <div className="card shadow-sm h-100 rounded-4 text-center">
               <div className="card-body px-4 pb-4">
                 <div className="card-img text-center pb-5">
                     <img src="Images/folder.gif" width={100} alt="" />
