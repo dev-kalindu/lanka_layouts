@@ -8,7 +8,7 @@ function services() {
       <div className="container">
         <h3 className="text-center fw-bold mb-3">{t("services")}</h3>
         <p
-          className="text-center text-muted mb-5 mx-auto"
+          className="text-center text-muted mb-5 mx-auto jost fs-5"
           style={{ maxWidth: "800px" }}
         >
           We provide a comprehensive range of documentation and design services

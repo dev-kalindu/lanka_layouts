@@ -1,9 +1,12 @@
  body {
-     font-family: "Jost", sans-serif;
+     font-family: "Poppins", sans-serif;
      color: #1a202c;
      /* overflow: hidden;  */
      scroll-behavior: smooth !important;
 
+ }
+ .jost{
+    font-family: "Jost", sans-serif !important;
  }
  .story-script {
   font-family: "Story Script", sans-serif;

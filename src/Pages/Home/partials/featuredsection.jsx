@@ -20,19 +20,19 @@ function featuredsection() {
                         <img src="/Images/logo-white.png" alt="logo" className="mb-3 h-100 w-100" />
                     </div>
                 </div> */}
-              <p className="mt-4 lead text-white" style={{ maxWidth: "700px" }}>
+              <p className="mt-4 lead text-white jost" style={{ maxWidth: "700px" }}>
                 {t("sideText")}
               </p>
               <h1 className="display-1 fw-bold text-white">{t("brand")}</h1>
               <h2 className="h4 text-white mt-3 story-script">
                 {t("heroTitle")}
               </h2>
-              <p className="mt-4 lead text-white" style={{ maxWidth: "700px" }}>
+              <p className="mt-4 lead text-white jost" style={{ maxWidth: "700px" }}>
                 {t("heroDesc")}
               </p>
               <a
                 href="#services"
-                className="btn btn-primary custom-btn mt-4 px-5 py-2"
+                className="btn btn-primary custom-btn mt-4 px-5 py-2 jost"
               >
                 {t("services")}
               </a>

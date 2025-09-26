@@ -9,7 +9,7 @@ function process() {
             Our Collaborative Process
           </h3>
           <p
-            className="text-center text-muted mb-5 mx-auto"
+            className="text-center text-muted mb-5 mx-auto jost fs-5"
             style={{ maxWidth: "800px" }}
           >
             We handle the technical preparation, so you can focus on managing
