@@ -23,7 +23,7 @@ function process() {
                   <ul className="list-unstyled">
                     <li className="mb-2">✔ Prepare technical drawings</li>
                     <li className="mb-2">
-                      ✔ Craft letters and forms for authorities
+                      ✔ Craft letters and forms for authorities.
                     </li>
                     <li className="mb-2">
                       ✔ Provide complete documentation package
