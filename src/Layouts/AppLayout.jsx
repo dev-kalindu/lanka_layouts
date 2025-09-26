@@ -23,12 +23,12 @@ function index() {
   });
   return (
     <div>
-      <div className="cursor-dot d-none d-lg-block" data-cursor-dot></div>
-      <a
-        href="tel:+94771234567"
-        className="call-btn d-flex align-items-center justify-content-center"
-      >
-        <FaPhoneAlt size={22} />
+      {/* <div className="cursor-dot d-none d-lg-block" data-cursor-dot></div> */}
+      <a href="tel:0712345678" mypage="" class="call-now" rel="nofollow">
+        <div class="mypage-alo-phone">
+          <div class="animated infinite pulse mypage-alo-ph-circle-fill"></div>
+          <div class="animated infinite tada mypage-alo-ph-img-circle"></div>
+        </div>
       </a>
       <Navbar />
 
