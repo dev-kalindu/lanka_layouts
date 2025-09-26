@@ -1,81 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { gsap } from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { useTranslation } from "react-i18next";
 import Featuredsection from "./partials/featuredsection";
+import Services from "./partials/services";
+
+
 
 function index() {
-   const { t } = useTranslation();
+  const { t } = useTranslation();
   
-
   return (
     <>
-     {/* Hero Section */}
-        
-    <Featuredsection />
+      <div>
+        {/* Hero Section */}
+
+        <Featuredsection />
+
         {/* Services Section */}
-        <section id="services" className="py-5 bg-white">
-          <div className="container">
-            <h3 className="text-center fw-bold mb-3">{t("services")}</h3>
-            <p
-              className="text-center text-muted mb-5 mx-auto"
-              style={{ maxWidth: "800px" }}
-            >
-              We provide a comprehensive range of documentation and design
-              services to ensure your project meets all regulatory requirements
-              and is ready for submission.
-            </p>
-            <div className="row g-4">
-              <div className="col-md-4">
-                <div className="card shadow-sm h-100 border-0">
-                  <div className="card-body">
-                    <h5 className="card-title fw-semibold">
-                      Architectural & Technical Drawings
-                    </h5>
-                    <p className="card-text text-muted">
-                      We create precise and compliant architectural drawings and
-                      MEP technical drawings. Your plans will be ready to meet
-                      authority standards.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="card shadow-sm h-100 border-0">
-                  <div className="card-body">
-                    <h5 className="card-title fw-semibold">
-                      Official Letters & Forms
-                    </h5>
-                    <p className="card-text text-muted">
-                      We prepare all necessary application letters and forms for
-                      submission to authorities like CMC, UDA, CMA, and COC
-                      clearances.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="card shadow-sm h-100 border-0">
-                  <div className="card-body">
-                    <h5 className="card-title fw-semibold">
-                      Complete Documentation Packages
-                    </h5>
-                    <p className="card-text text-muted">
-                      Our packages include all drawings, letters, and forms,
-                      giving you a ready-to-submit kit. We also provide MEP
-                      drawings certified by chartered engineers.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
+        <Services />
 
         {/* Process Section */}
         <section id="process" className="py-5 bg-light">
           <div className="container">
-            <h3 className="text-center fw-bold mb-3">Our Collaborative Process</h3>
+            <h3 className="text-center fw-bold mb-3">
+              Our Collaborative Process
+            </h3>
             <p
               className="text-center text-muted mb-5 mx-auto"
               style={{ maxWidth: "800px" }}
@@ -171,7 +123,10 @@ function index() {
         </section>
 
         {/* CTA Section */}
-        <section id="contact" className="py-5 bg-primary text-white text-center">
+        <section
+          id="contact"
+          className="py-5 bg-primary text-white text-center"
+        >
           <div className="container">
             <h3 className="fw-bold mb-3">Ready to Get Started?</h3>
             <p className="mb-4">
@@ -186,6 +141,7 @@ function index() {
             </a>
           </div>
         </section>
+      </div>
     </>
   );
 }

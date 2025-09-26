@@ -1,6 +1,8 @@
  body {
      font-family: "Jost", sans-serif;
      color: #1a202c;
+     /* overflow: hidden;  */
+     scroll-behavior: smooth !important;
 
  }
  .story-script {
@@ -93,10 +95,41 @@
  .call-btn {
      animation: pulse 2s infinite;
  }
+ .service-section .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border: 2px solid #0000;
+  border-radius: 12px;
+  background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(
+        var(--angle),
+        #ffffff,
+        #3f8cf4
+      ) border-box !important;
+  animation: 8s rotate linear infinite;
+}
 
- /* @media (max-width:639px) {
-    .carousel-item{
-        height: 600px;
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.service-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+ @media (max-width:639px) {
+    .service-section{
+    height: auto;
     }
-    
-} */
+   
+}
