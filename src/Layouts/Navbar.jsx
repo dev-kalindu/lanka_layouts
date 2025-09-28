@@ -39,19 +39,19 @@ function Navbar() {
           >
             <ul className="navbar-nav ms-auto align-items-center">
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold"> Home</a>
+                <a href="" className="nav-link fw-semibold text-black"> Home</a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold"> Our Services</a>
+                <a href="" className="nav-link fw-semibold text-black"> Our Services</a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold"> Our Process</a>
+                <a href="" className="nav-link fw-semibold text-black"> Our Process</a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold"> Authorities</a>
+                <a href="" className="nav-link fw-semibold text-black"> Authorities</a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold"> About Us</a>
+                <a href="" className="nav-link fw-semibold text-black"> About Us</a>
               </li>
             </ul>
             <ul className="navbar-nav ms-auto align-items-center">
