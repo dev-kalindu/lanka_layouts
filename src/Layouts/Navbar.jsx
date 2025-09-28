@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../i18n";
-import Flag from "react-world-flags";
+
 import Select from "react-select";
 
 function Navbar() {
@@ -91,14 +91,14 @@ function Navbar() {
               <li className="nav-item me-3">
                 <a
                   href="#scrollauthorities"
-                  className="nav-link fw-semibold text-black"
+                  className="nav-link fw-semibold"
                 >
                   {" "}
                   Authorities
                 </a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold text-black">
+                <a href="" className="nav-link fw-semibold">
                   {" "}
                   About Us{" "}
                 </a>
