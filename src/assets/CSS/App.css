@@ -49,10 +49,22 @@
  .nav-bar-custom {
      position: fixed;
      top: 0;
-     right: 0;
+     /* right: 0; */
      z-index: 9998;
      width: 100%;
  }
+
+ @media (max-width:639px) {
+     .nav-bar-custom {
+      width: 100% !important;
+      margin-top: 0px !important;
+      border-radius: 0% !important;
+     }
+ }
+
+ .outer-nav {
+  background-color: transparent !important;
+}
 
  .custom-btn {
      background-color: transparent;

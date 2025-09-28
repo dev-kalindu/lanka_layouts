@@ -12,9 +12,9 @@ function Navbar() {
   };
 
   return (
-    <div>
-      <header className="bg-white shadow-sm nav-bar-custom">
-        <nav className="navbar navbar-expand-md navbar-light bg-white container py-3">
+    <div className="d-flex justify-content-center w-100 outer-nav" style={{ backgroundColor: "transparent" }}>
+      <header className="shadow-sm nav-bar-custom w-75 bg-white px-3 rounded-4 mt-3">
+        <nav className="navbar navbar-expand-md navbar-light container py-3">
           <a className="navbar-brand fw-bold fs-4 text-dark" href="#">
             <img src="Images/logo-black.png" width={130} alt="logo" className="" />
           </a>
