@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className="d-flex justify-content-center w-100 outer-nav" style={{ backgroundColor: "transparent" }}>
-      <header className="shadow-sm nav-bar-custom w-75 bg-white px-3 rounded-4 mt-3">
+      <header className="shadow nav-bar-custom w-75 bg-white px-3 rounded-4 mt-3 custom-animated-border">
         <nav className="navbar navbar-expand-md navbar-light container py-3">
           <a className="navbar-brand fw-bold fs-4 text-dark" href="#">
             <img src="Images/logo-black.png" width={130} alt="logo" className="" />
