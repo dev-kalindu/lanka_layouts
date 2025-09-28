@@ -236,6 +236,18 @@
   box-shadow: none !important;
 }
 
+.nav-bar-custom .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: transparent !important;
+  font-weight: 700 !important;
+  color: black !important;
+}
+.nav-bar-custom .navbar-nav .nav-item .nav-link{
+  color: #49494a;
+}
+
+.css-13cymwt-control{
+  border: 0px !important;
+}
  @media (max-width:639px) {
     .service-section{
     height: auto;

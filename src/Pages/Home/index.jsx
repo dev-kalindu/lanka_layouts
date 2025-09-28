@@ -6,78 +6,44 @@ import { useTranslation } from "react-i18next";
 import Featuredsection from "./partials/featuredsection";
 import Services from "./partials/services";
 import Process from "./partials/process";
+import Authorities from "./partials/authorities";
 
 function index() {
   const { t } = useTranslation();
 
   return (
     <>
-      <div>
+      <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example2"
+        data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true"
+        className="scrollspy-example bg-body-tertiary rounded-2"
+        tabIndex="0"
+      >
         {/* Hero Section */}
 
-        <Featuredsection />
+        <div id="scrollhome">
+          <Featuredsection />
+        </div>
 
         {/* Services Section */}
 
-        <Services />
+        <div id="scrollservices">
+          <Services />
+        </div>
 
         {/* Process Section */}
 
-        <Process />
+        <div id="scrollprocess">
+          <Process />
+        </div>
 
         {/* Authorities Section */}
-        <section className="py-5 bg-white">
-          <div className="container">
-            <h3 className="text-center fw-bold mb-3">
-              Navigating Sri Lankan Authorities
-            </h3>
-            <p
-              className="text-center text-muted mb-5 mx-auto"
-              style={{ maxWidth: "800px" }}
-            >
-              We prepare documentation for the following authorities, ensuring
-              compliance with their requirements.
-            </p>
-            <div className="row g-4">
-              <div className="col-md-3">
-                <div className="bg-light p-4 rounded h-100">
-                  <h5 className="fw-bold text-primary">CMC</h5>
-                  <p className="small text-muted">
-                    Colombo Municipal Council clearances for new construction
-                    projects.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="bg-light p-4 rounded h-100">
-                  <h5 className="fw-bold text-primary">UDA</h5>
-                  <p className="small text-muted">
-                    Urban Development Authority approvals for development
-                    permits.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="bg-light p-4 rounded h-100">
-                  <h5 className="fw-bold text-primary">CMA</h5>
-                  <p className="small text-muted">
-                    Condominium Management Authority approvals and compliance
-                    checks.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-3">
-                <div className="bg-light p-4 rounded h-100">
-                  <h5 className="fw-bold text-primary">COC</h5>
-                  <p className="small text-muted">
-                    Certificate of Conformity verifying building compliance with
-                    regulations.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
+        <div id="scrollauthorities">
+          <Authorities />
+        </div>
 
         {/* CTA Section */}
         <section

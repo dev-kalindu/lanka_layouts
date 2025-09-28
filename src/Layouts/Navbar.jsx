@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-
 import { useTranslation } from "react-i18next";
 import "../i18n";
+import Flag from "react-world-flags";
+import Select from "react-select";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +11,34 @@ function Navbar() {
   const changeLang = (lng) => {
     i18n.changeLanguage(lng);
   };
+  const options = [
+    {
+      value: "en",
+      label: (
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img
+            src="Images/united-states.png"
+            alt="English"
+            style={{ width: 20, height: 14, marginRight: 8 }}
+          />
+          English
+        </div>
+      ),
+    },
+    {
+      value: "si",
+      label: (
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <img
+            src="Images/sri-lanka.png"
+            alt="සිංහල"
+            style={{ width: 20, height: 14, marginRight: 8 }}
+          />
+          සිංහල
+        </div>
+      ),
+    },
+  ];
 
   return (
     <div
@@ -17,7 +46,10 @@ function Navbar() {
       style={{ backgroundColor: "transparent" }}
     >
       <header className="shadow nav-bar-custom w-75 bg-white px-3 rounded-4 mt-3 custom-animated-border">
-        <nav className="navbar navbar-expand-md navbar-light container py-3">
+        <nav
+          className="navbar navbar-expand-md navbar-light container py-3"
+          id="navbar-example2"
+        >
           <a className="navbar-brand fw-bold fs-4 text-dark" href="#">
             <img
               src="Images/logo-black.png"
@@ -37,34 +69,60 @@ function Navbar() {
           <div
             className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
           >
-            <ul className="navbar-nav ms-auto align-items-center">
+            <ul className="navbar-nav ms-auto align-items-center nav nav-pills">
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold text-black"> Home</a>
+                <a href="#scrollhome" className="nav-link fw-semibold">
+                  {" "}
+                  Home
+                </a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold text-black"> Our Services</a>
+                <a href="#scrollservices" className="nav-link fw-semibold">
+                  {" "}
+                  Our Services
+                </a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold text-black"> Our Process</a>
+                <a href="#scrollprocess" className="nav-link fw-semibold">
+                  {" "}
+                  Our Process
+                </a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold text-black"> Authorities</a>
+                <a
+                  href="#scrollauthorities"
+                  className="nav-link fw-semibold text-black"
+                >
+                  {" "}
+                  Authorities
+                </a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold text-black"> About Us</a>
+                <a href="" className="nav-link fw-semibold text-black">
+                  {" "}
+                  About Us{" "}
+                </a>
               </li>
             </ul>
             <ul className="navbar-nav ms-auto align-items-center">
               <li className="nav-item me-3">
-                <select
-                  className="form-select form-select-sm"
-                  style={{ width: "auto" }}
-                  onChange={(e) => changeLang(e.target.value)}
-                  defaultValue={i18n.language}
-                >
-                  <option value="en">English</option>
-                  <option value="si">සිංහල</option>
-                </select>
+                <Select
+                  options={options}
+                  onChange={(selectedOption) =>
+                    changeLang(selectedOption.value)
+                  }
+                  defaultValue={options.find(
+                    (opt) => opt.value === i18n.language
+                  )}
+                  isSearchable={false}
+                  styles={{
+                    control: (provided) => ({
+                      ...provided,
+                      border: "none",
+                      boxShadow: "none",
+                    }),
+                  }}
+                />
               </li>
             </ul>
           </div>
