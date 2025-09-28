@@ -231,6 +231,11 @@
     align-items: center;
 }
 
+.form-select:focus{
+  border-color: #DEE2E6 !important;
+  box-shadow: none !important;
+}
+
  @media (max-width:639px) {
     .service-section{
     height: auto;
