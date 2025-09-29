@@ -17,7 +17,7 @@ function Navbar() {
       label: (
         <div style={{ display: "flex", alignItems: "center" }}>
           <img
-            src="Images/united-states.png"
+            src="Images/web.png"
             alt="English"
             style={{ width: 20, height: 14, marginRight: 8 }}
           />

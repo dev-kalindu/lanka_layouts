@@ -252,6 +252,18 @@
 .css-1u9des2-indicatorSeparator{
   display: none !important;
 }
+.authorities-row .img-wrapper{
+  height: 200px;
+}
+
+.authority-card{
+  border-radius: 12px;
+}
+
+.authority-card .img-wrapper img{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
  @media (max-width:639px) {
     .service-section{
     height: auto;
