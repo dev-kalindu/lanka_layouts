@@ -1,79 +1,86 @@
- body {
-     font-family: "Poppins", sans-serif;
-     color: #1a202c;
-     /* overflow: hidden;  */
-     scroll-behavior: smooth !important;
+/* :root {
+  --foreground-color: hsl(220, 10%, 100%);
+  --background-color: #366bfd;
 
- }
- .jost{
-    font-family: "Jost", sans-serif !important;
- }
- .story-script {
+  --gradient-color-1: hsl(227, 97%, 74%);
+  --gradient-color-2: #366bfd;
+  --gradient-color-3: hsl(0, 0%, 100%);
+} */
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1a202c;
+  /* overflow: hidden;  */
+  scroll-behavior: smooth !important;
+}
+.jost {
+  font-family: "Jost", sans-serif !important;
+}
+.story-script {
   font-family: "Story Script", sans-serif;
-  
 }
 
- .cursor-dot {
-     height: 10px;
-     width: 10px;
-     background-color: black;
-     border-radius: 50%;
-     position: fixed;
-     top: 0;
-     left: 0;
-     transform: translate(-50%, -50%);
-     pointer-events: none;
-     z-index: 9999;
- }
+.cursor-dot {
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
 
- .carousel-item {
-     height: 100vh;
- }
+.carousel-item {
+  height: 100vh;
+}
 
- .caption {
-     z-index: 3;
- }
+.caption {
+  z-index: 3;
+}
 
- .carousel-item::before {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: rgba(0, 0, 0, 0.2);
-     /* darkness level */
-     z-index: 1;
- }
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  /* darkness level */
+  z-index: 1;
+}
 
- .nav-bar-custom {
-     position: fixed;
-     top: 0;
-     /* right: 0; */
-     z-index: 9998;
-     width: 100%;
- }
+.nav-bar-custom {
+  position: fixed;
+  top: 0;
+  /* right: 0; */
+  z-index: 9998;
+  width: 100%;
+}
 
- @media (max-width:639px) {
-     .nav-bar-custom {
-      width: 100% !important;
-      margin-top: 0px !important;
-      border-radius: 0% !important;
-     }
- }
+@media (max-width: 639px) {
+  .nav-bar-custom {
+    width: 100% !important;
+    margin-top: 0px !important;
+    border-radius: 0% !important;
+  }
+}
 
- .outer-nav {
+.outer-nav {
   background-color: transparent !important;
 }
 
- .custom-btn {
-     background-color: transparent;
-     color: white;
-     border-color: white;
-     border-radius: 0;
- }
+.custom-btn {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  border-radius: 0;
+}
 
- /* .call-btn {
+/* .call-btn {
   position: fixed;
     bottom: 20px;
     right: 20px;
@@ -93,8 +100,7 @@
      transform: scale(1.1);
  } */
 
-
- /* @keyframes pulse-ring {
+/* @keyframes pulse-ring {
     0% {
         box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
     }
@@ -106,112 +112,107 @@
     }
 } */
 
-@-webkit-keyframes pulse{
-  0%{
+@-webkit-keyframes pulse {
+  0% {
     -webkit-transform: scale(0.9);
   }
-  50%{
+  50% {
     -webkit-transform: scale(1.1);
   }
-  100%{ 
+  100% {
     -webkit-transform: scale(0.9);
   }
 }
 .mypage-alo-phone {
-    position: fixed;
-    right: 15px;
-    bottom:15px;
-    visibility: visible;
-    background-color: transparent;
-    width: 110px;
-    height: 110px;
-    cursor: pointer;
-    z-index: 200000 !important;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  visibility: visible;
+  background-color: transparent;
+  width: 110px;
+  height: 110px;
+  cursor: pointer;
+  z-index: 200000 !important;
 }
 .mypage-alo-ph-img-circle {
-        width: 50px;
-        height: 50px;
-        top: 43px;
-        left: 43px;
-        position: absolute;
-        background:  url(https://i.imgur.com/J9AXAq7.png) no-repeat center center;
-        -webkit-border-radius: 100%;
-        -moz-border-radius: 100%;
-        border-radius: 100%;
-        border: 2px solid transparent;
-        opacity: .7;
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -ms-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        -webkit-transform-origin: 50% 50%;
-        -moz-transform-origin: 50% 50%;
-        -ms-transform-origin: 50% 50%;
-        -o-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        background-color: #366bfd;
-        background-size: 70%;
-      -webkit-animation: pulse 01s infinite;
+  width: 50px;
+  height: 50px;
+  top: 43px;
+  left: 43px;
+  position: absolute;
+  background: url(https://i.imgur.com/J9AXAq7.png) no-repeat center center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  opacity: 0.7;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  background-color: #366bfd;
+  background-size: 70%;
+  -webkit-animation: pulse 01s infinite;
 }
 .mypage-alo-ph-circle-fill {
-  
-    width: 80px;
-    height: 80px;
-    top: 28px;
-    left: 28px;
-    position: absolute;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    border: 2px solid transparent;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    background-color: rgba(156, 143, 244, 0.5);
-    opacity: .75 !important;
-    -webkit-animation: pulse 1s infinite;
+  width: 80px;
+  height: 80px;
+  top: 28px;
+  left: 28px;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: rgba(156, 143, 244, 0.5);
+  opacity: 0.75 !important;
+  -webkit-animation: pulse 1s infinite;
 }
-.mypage-alo-ph-circle{
-    width: 90px;
-    height: 90px;
-    top: 12px;
-    left: 12px;
-    position: absolute;
-    background-color: transparent;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    border: 2px solid rgba(30, 30, 30, 0.4);
-    opacity: .1;
-    border-color:#ffb56b;
-    opacity: .5;
+.mypage-alo-ph-circle {
+  width: 90px;
+  height: 90px;
+  top: 12px;
+  left: 12px;
+  position: absolute;
+  background-color: transparent;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 2px solid rgba(30, 30, 30, 0.4);
+  opacity: 0.1;
+  border-color: #ffb56b;
+  opacity: 0.5;
 }
 
- .call-btn {
-     animation: pulse 2s infinite;
- }
- .service-section .card {
+.call-btn {
+  animation: pulse 2s infinite;
+}
+.service-section .card {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 12px;
-  border: 2px solid #0000;
+  border: 1px solid #0000;
   border-radius: 12px;
-  background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(
-        var(--angle),
-        #ffffff,
-        #3f8cf4
-      ) border-box !important;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(var(--angle), #ffffff, #3f8cf4) border-box !important;
   animation: 8s rotate linear infinite;
 }
-
 
 @keyframes rotate {
   to {
@@ -219,54 +220,82 @@
   }
 }
 
-
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
-.service-section{
-    height: 100vh;
-    display: flex;
-    align-items: center;
+.service-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
-.form-select:focus{
-  border-color: #DEE2E6 !important;
+.form-select:focus {
+  border-color: #dee2e6 !important;
   box-shadow: none !important;
 }
 
-.nav-bar-custom .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-bar-custom .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   background-color: transparent !important;
   font-weight: 700 !important;
   color: black !important;
 }
-.nav-bar-custom .navbar-nav .nav-item .nav-link{
+.nav-bar-custom .navbar-nav .nav-item .nav-link {
   color: #49494a;
 }
 
-.css-13cymwt-control{
+.css-13cymwt-control {
   border: 0px !important;
 }
 
-.css-1u9des2-indicatorSeparator{
+.css-1u9des2-indicatorSeparator {
   display: none !important;
 }
-.authorities-row .img-wrapper{
+.authorities-row .img-wrapper {
   height: 200px;
 }
 
-.authority-card{
+.authority-card {
   border-radius: 12px;
 }
 
-.authority-card .img-wrapper img{
+.authority-card .img-wrapper img {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
- @media (max-width:639px) {
-    .service-section{
+.crd-img-wrapper {
+  height: 200px;
+}
+/* .linear-background {
+  background: radial-gradient(
+      circle at 15% 25%,
+      var(--gradient-color-1),
+      transparent 35%
+    ),
+    radial-gradient(circle at 85% 30%, var(--gradient-color-2), transparent 40%),
+    radial-gradient(circle at 50% 80%, var(--gradient-color-3), transparent 30%);
+
+  background-size: 200% 200%;
+  animation: moveGradient 10s infinite alternate ease-in-out;
+}
+
+@keyframes moveGradient {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+} */
+
+.card-border-radius{
+  border-radius: 18px !important;
+}
+
+@media (max-width: 639px) {
+  .service-section {
     height: auto;
-    }
-   
+  }
 }
