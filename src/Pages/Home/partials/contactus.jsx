@@ -93,7 +93,7 @@ function contactus() {
                 <div style={{ margin: "10px 0" }}>
                   <ReCAPTCHA
                     ref={recaptchaRef}
-                    sitekey="6LcfVesrAAAAANb81zm6HPbkRwGcs0Vd6kDp3gLY"
+                    sitekey="6LfoV-srAAAAALxitVlNaqAmuwBwUdiSvUx8P3jl"
                     onChange={() => setCaptchaValid(true)}
                     onExpired={() => setCaptchaValid(false)}
                   />
