@@ -98,9 +98,9 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item me-3">
-                <a href="" className="nav-link fw-semibold">
+                <a href="#scrollcontact" className="nav-link fw-semibold">
                   {" "}
-                  About Us{" "}
+                  Contact Us{" "}
                 </a>
               </li>
             </ul>

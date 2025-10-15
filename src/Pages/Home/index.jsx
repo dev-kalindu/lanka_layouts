@@ -7,6 +7,8 @@ import Featuredsection from "./partials/featuredsection";
 import Services from "./partials/services";
 import Process from "./partials/process";
 import Authorities from "./partials/authorities";
+import Contact from "./partials/contactus";
+
 
 function index() {
   const { t } = useTranslation();
@@ -46,24 +48,9 @@ function index() {
         </div>
 
         {/* CTA Section */}
-        <section
-          id="contact"
-          className="py-5 bg-primary text-white text-center"
-        >
-          <div className="container">
-            <h3 className="fw-bold mb-3">Ready to Get Started?</h3>
-            <p className="mb-4">
-              Let us handle your technical documentation so you can focus on the
-              bigger picture.
-            </p>
-            <a
-              href="mailto:info@lankalayouts.lk"
-              className="btn btn-light btn-lg rounded-pill"
-            >
-              Contact Us Today
-            </a>
-          </div>
-        </section>
+        <div id="scrollcontact">
+          <Contact />
+        </div>
       </div>
     </>
   );

@@ -268,6 +268,9 @@ body {
 .crd-img-wrapper {
   height: 200px;
 }
+.form-control{
+  box-shadow: none !important;
+}
 /* .linear-background {
   background: radial-gradient(
       circle at 15% 25%,
