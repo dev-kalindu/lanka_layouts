@@ -80,6 +80,26 @@ body {
   border-radius: 0;
 }
 
+.custom-btn-2 {
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 0;
+  border: 0;
+}
+
+.email-input {
+  border-left: 0;
+}
+
+.custom-btn-2:hover {
+  background-color: #49494a;
+  transition: 0.2s ease-in-out;
+}
+.custom-btn-2:disabled {
+  background-color: #666666;
+}
+
 /* .call-btn {
   position: fixed;
     bottom: 20px;
@@ -268,8 +288,11 @@ body {
 .crd-img-wrapper {
   height: 200px;
 }
-.form-control{
+.form-control {
   box-shadow: none !important;
+}
+.custom-lable {
+  font-size: 14px !important;
 }
 /* .linear-background {
   background: radial-gradient(
@@ -293,8 +316,18 @@ body {
   }
 } */
 
-.card-border-radius{
+.card-border-radius {
   border-radius: 18px !important;
+}
+
+.contact-us-background {
+  background: #F5F9FF;
+  /* background: linear-gradient(
+    90deg,
+    rgba(63, 140, 244, 1) 17%,
+    rgba(255, 255, 255, 1) 72%,
+    rgba(63, 140, 244, 1) 99%
+  ); */
 }
 
 @media (max-width: 639px) {

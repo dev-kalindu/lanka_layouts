@@ -3,7 +3,7 @@ import React from "react";
 function process() {
   return (
     <div>
-      <section id="process" className="py-5 bg-light service-section linear-background">
+      <section id="process" className="py-5 service-section contact-us-background">
         <div class="h"></div>
         <div class="v"></div>
         <div className="container">
