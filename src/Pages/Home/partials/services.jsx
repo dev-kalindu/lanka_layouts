@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 function services() {
   const { t } = useTranslation();
   return (
-    <section id="services" className="py-5 bg-white service-section">
+    <section id="services" className="py-5 bg-white custom-spacing">
       <div className="container">
         <h3 className="text-center fw-bold mb-3">{t("services")}</h3>
         <p
@@ -15,17 +15,18 @@ function services() {
           to ensure your project meets all regulatory requirements and is ready
           for submission.
         </p>
-        <div className="row g-4">
-          <div className="col-md-4">
-            <div className="card shadow-sm h-100 rounded-4 text-center">
+        <div className="row g-4 justify-content-center">
+          <div className="col-md-3">
+            <div className="card h-100 rounded-4 border-0 text-center">
               <div className="card-body px-4 pb-4">
-                <div className="card-img text-center pb-5">
-                    <img src="Images/blueprint.gif" width={100} alt="" />
+                <div className="card-img pb-5">
+                    <img src="Images/blueprint.gif" className="bg-white rounded-circle p-2 border crd-img-div" width={100} alt="" />
                 </div>
-                <h5 className="card-title fw-semibold">
+                <h5 className="card-title fw-semibold fs-6">
                   Architectural & Technical Drawings
                 </h5>
-                <p className="card-text text-muted">
+                {/* <div className="custom_uderline border-bottom border-2  border  w-50 my-3"></div> */}
+                <p className="card-text text-muted jost">
                   We create precise and compliant architectural drawings and MEP
                   technical drawings. Your plans will be ready to meet authority
                   standards.
@@ -33,16 +34,17 @@ function services() {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="card shadow-sm h-100 rounded-4 text-center">
+          <div className="col-md-3">
+            <div className="card h-100 rounded-4 border-0 text-center">
               <div className="card-body px-4 pb-4">
-                <div className="card-img text-center pb-5">
-                    <img src="Images/letter.gif" width={100} alt="" />
+                <div className="card-img pb-5">
+                    <img src="Images/letter.gif" className="bg-white rounded-circle p-2 border" width={100} alt="" />
                 </div>
-                <h5 className="card-title fw-semibold">
+                <h5 className="card-title fw-semibold fs-6">
                   Official Letters & Forms
                 </h5>
-                <p className="card-text text-muted">
+                 {/* <div className="custom_uderline border-bottom border-2  border  w-50 my-3"></div> */}
+                <p className="card-text text-muted jost">
                   We prepare all necessary application letters and forms for
                   submission to authorities like CMC, UDA, CMA, and COC
                   clearances.
@@ -50,16 +52,17 @@ function services() {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="card shadow-sm h-100 rounded-4 text-center">
+          <div className="col-md-3">
+            <div className="card h-100 rounded-4 border-0 text-center">
               <div className="card-body px-4 pb-4">
-                <div className="card-img text-center pb-5">
-                    <img src="Images/folder.gif" width={100} alt="" />
+                <div className="card-img pb-5">
+                    <img src="Images/folder.gif" className="bg-white rounded-circle p-2 border" width={100} alt="" />
                 </div>
-                <h5 className="card-title fw-semibold">
+                <h5 className="card-title fw-semibold fs-6">
                   Complete Documentation Packages
                 </h5>
-                <p className="card-text text-muted">
+                 {/* <div className="custom_uderline border-bottom border-2  border  w-50 my-3"></div> */}
+                <p className="card-text text-muted jost">
                   Our packages include all drawings, letters, and forms, giving
                   you a ready-to-submit kit. We also provide MEP drawings
                   certified by chartered engineers.

@@ -38,7 +38,7 @@ function contactus() {
       );
   };
   return (
-    <div>
+    <div className="">
       <section id="contact" className="py-5 contact-us-background">
         <div className="container">
           <div className="row contact-us align-items-center">

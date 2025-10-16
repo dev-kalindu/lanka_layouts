@@ -32,7 +32,7 @@ function featuredsection() {
               </p>
               <a
                 href="#services"
-                className="btn btn-primary custom-btn mt-4 px-5 py-2 jost"
+                className="btn btn-primary custom-btn mt-4 px-5 py-2 jost hero-btn"
               >
                 {t("services")}
               </a>

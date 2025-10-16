@@ -2,8 +2,8 @@ import React from "react";
 
 function authorities() {
   return (
-    <div>
-      <section className="py-5 bg-white service-section">
+    <div className="pb-5">
+      <section className="py-5 bg-white custom-spacing ">
         <div className="container">
           <h3 className="text-center fw-bold mb-3">
             Navigating Sri Lankan Authorities
