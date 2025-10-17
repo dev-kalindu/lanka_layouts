@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div>
       <footer>
@@ -17,12 +19,10 @@ function Footer() {
                   />
                 </div>
                 <p className="text-white jost">
-                  We specialize in creating technically correct drawings and
-                  professionally written letters for your architectural and
-                  engineering projects in Sri Lanka.
+                 {t("heroDesc")}
                 </p>
               </div>
-              <div className="col-md-6">
+              <div className="col-md-7">
                 <div className="nav-link-footer">
                   <p>
                     <Link
@@ -54,7 +54,7 @@ function Footer() {
                       duration={100}
                       className="text-white jost fs-5 text-decoration-none"
                     >
-                      Authorities
+                      Advantages
                     </Link>
                   </p>
                   <p>
@@ -68,9 +68,20 @@ function Footer() {
                       About Us
                     </Link>
                   </p>
+                  <p>
+                    <Link
+                      to="scrollservices"
+                      spy={true}
+                      smooth={true}
+                      duration={100}
+                      className="text-white jost fs-5 text-decoration-none"
+                    >
+                      Contact Us
+                    </Link>
+                  </p>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-3">
+              <div className="col-md-6 col-lg-2">
                 <div className="text-white">
                   <p className="fw-bold fs-4 jost mb-2">Terms & Policies</p>
                   <p className="mb-1 jost footer-link">Privacy Policy</p>

@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useTranslation } from "react-i18next";
 
 function contactus() {
+  const { t } = useTranslation();
   const form = useRef();
   const recaptchaRef = useRef();
   const [captchaValid, setCaptchaValid] = useState(false);
@@ -48,8 +50,7 @@ function contactus() {
                   <div className="mb-3">
                     <p className="fs-1 mb-3">Contact Us</p>
                     <p className="mb-4">
-                      Let us handle your technical documentation so you can
-                      focus on the bigger picture.
+                      {t("contact_us")}
                     </p>
                   </div>
                   <div>
@@ -68,8 +69,8 @@ function contactus() {
             <div className="col-md-12 col-lg-6">
               <div className="bg-white p-4 p-md-5 rounded rounded-4 shadow-sm">
                 <p className="mb-5 text-black fs-4">
-                  We'd love to hear from you! <br />
-                  Let's get in touch
+                  {t("contact_heading_1")} <br />
+                  {t("contact_heading_2")}
                 </p>
                 <form ref={form} onSubmit={sendEmail}>
                   <div className="row">
@@ -152,7 +153,7 @@ function contactus() {
                         type="submit"
                         disabled={!captchaValid}
                       >
-                        Send Message
+                        {t("message")}
                       </button>
                     </div>
                   </div>

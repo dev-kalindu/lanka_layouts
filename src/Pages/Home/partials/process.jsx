@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 function process() {
-
+const { t } = useTranslation();
   return (
     <div>
       <section id="process" className="py-5 bg-white custom-spacing">
@@ -9,14 +10,13 @@ function process() {
         <div class="v"></div>
         <div className="container">
           <h3 className="text-center fw-bold mb-3">
-            Our Collaborative Process
+            {t("collaborate_heading")}
           </h3>
           <p
             className="text-center text-muted mb-5 mx-auto jost fs-5"
             style={{ maxWidth: "800px" }}
           >
-            We handle the technical preparation, so you can focus on managing
-            your project and communicating with authorities.
+            {t("collaborate_des")}
           </p>
           <div className="row g-4 justify-content-center pt-5
           ">
@@ -31,15 +31,15 @@ function process() {
                     />
                   </div>
                   <h4 className="fw-bold text-primary mb-3 pt-4 text-center jost">
-                    What We Do
+                    {t("collaborate_we_do")}
                   </h4>
                   <ul className="list-unstyled p-2">
-                    <li className="mb-2">✔ Prepare technical drawings</li>
+                    <li className="mb-2"><i class="fa-solid fa-circle-check pe-2"></i> {t("collaborate_we_do_1")}</li>
                     <li className="mb-2">
-                      ✔ Craft letters and forms for authorities.
+                      <i class="fa-solid fa-circle-check pe-2"></i> {t("collaborate_we_do_2")}
                     </li>
                     <li className="mb-2">
-                      ✔ Provide complete documentation package
+                      <i class="fa-solid fa-circle-check pe-2"></i> {t("collaborate_we_do_3")}
                     </li>
                   </ul>
                 </div>
@@ -55,11 +55,11 @@ function process() {
                       alt=""
                     />
                   </div>
-                  <h4 className="fw-bold mb-3 pt-4 text-center jost">What You Do</h4>
+                  <h4 className="fw-bold mb-3 pt-4 text-center jost">{t("collaborate_you_do")}</h4>
                   <ul className="list-unstyled p-2">
-                    <li className="mb-2">- Handle your own submissions</li>
-                    <li className="mb-2">- Manage project timelines</li>
-                    <li className="mb-2">- Deal directly with authorities</li>
+                    <li className="mb-2"><i class="fa-solid fa-circle-minus pe-2"></i> {t("collaborate_you_do_1")}</li>
+                    <li className="mb-2"><i class="fa-solid fa-circle-minus pe-2"></i> {t("collaborate_you_do_2")}</li>
+                    <li className="mb-2"><i class="fa-solid fa-circle-minus pe-2"></i> {t("collaborate_you_do_3")}</li>
                   </ul>
                 </div>
               </div>

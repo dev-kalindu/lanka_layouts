@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
 
 function featuredsection() {
   const { t } = useTranslation();
@@ -25,17 +26,20 @@ function featuredsection() {
               </p>
               <h1 className="display-1 fw-bold text-white">{t("brand")}</h1>
               <h2 className="h4 text-white mt-3 story-script">
-                {t("heroTitle")}
+                "{t("heroTitle")}"
               </h2>
               <p className="mt-4 lead text-white jost" style={{ maxWidth: "700px" }}>
                 {t("heroDesc")}
               </p>
-              <a
-                href="#services"
-                className="btn btn-primary custom-btn mt-4 px-5 py-2 jost hero-btn"
-              >
-                {t("services")}
-              </a>
+              <Link
+                                    to="scrollcontact"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={100}
+                                    className="btn btn-primary custom-btn mt-4 px-5 py-2 jost hero-btn"
+                                  >
+                                    {t("start_btn")}
+                                  </Link>
             </div>
           </div>
         </div>

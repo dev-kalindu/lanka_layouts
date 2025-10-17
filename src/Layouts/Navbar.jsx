@@ -71,12 +71,6 @@ function Navbar() {
           >
             <ul className="navbar-nav ms-auto align-items-center nav nav-pills">
               <li className="nav-item me-3">
-                <a href="#scrollhome" className="nav-link fw-semibold">
-                  {" "}
-                  Home
-                </a>
-              </li>
-              <li className="nav-item me-3">
                 <a href="#scrollservices" className="nav-link fw-semibold">
                   {" "}
                   Our Services
@@ -94,7 +88,16 @@ function Navbar() {
                   className="nav-link fw-semibold"
                 >
                   {" "}
-                  Authorities
+                  Advantages
+                </a>
+              </li>
+              <li className="nav-item me-3">
+                <a
+                  href=""
+                  className="nav-link fw-semibold"
+                >
+                  {" "}
+                  About Us
                 </a>
               </li>
               <li className="nav-item me-3">
