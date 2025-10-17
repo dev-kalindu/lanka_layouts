@@ -16,7 +16,7 @@ function authorities() {
             compliance with their requirements.
           </p>
           <div className="authorities-row row g-4">
-            <div className="col-md-3">
+            <div className="col-md-6 col-lg-3">
               <div className="bg-white border h-100 authority-card">
                 <div className="img-wrapper">
                   <img src="Images/cmc.jpg" className="w-100 h-100" alt="" />
@@ -30,7 +30,7 @@ function authorities() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6 col-lg-3">
               <div className="bg-white border h-100 authority-card">
                 <div className="img-wrapper">
                   <img src="Images/uda.jpg" className="w-100 h-100" alt="" />
@@ -44,7 +44,7 @@ function authorities() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6 col-lg-3">
               <div className="bg-white border h-100 authority-card">
                 <div className="img-wrapper">
                   <img src="Images/cma.png" className="w-100 h-100" alt="" />
@@ -58,7 +58,7 @@ function authorities() {
                 </div>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-md-6 col-lg-3">
               <div className="bg-white border h-100 authority-card">
                 <div className="img-wrapper">
                   <img src="Images/coc.jpg" className="w-100 h-100" alt="" />

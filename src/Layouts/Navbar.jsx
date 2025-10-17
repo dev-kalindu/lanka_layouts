@@ -47,7 +47,7 @@ function Navbar() {
     >
       <header className="shadow nav-bar-custom w-75 bg-white px-3 rounded-4 mt-3 custom-animated-border">
         <nav
-          className="navbar navbar-expand-md navbar-light container py-3"
+          className="navbar navbar-expand-lg navbar-light container py-3"
           id="navbar-example2"
         >
           <a className="navbar-brand fw-bold fs-4 text-dark" href="#">

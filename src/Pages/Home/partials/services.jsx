@@ -15,8 +15,8 @@ function services() {
           to ensure your project meets all regulatory requirements and is ready
           for submission.
         </p>
-        <div className="row g-4 justify-content-center">
-          <div className="col-md-3">
+        <div className="row g-4 justify-content-center pt-5">
+          <div className="col-md-4 col-lg-3">
             <div className="card h-100 rounded-4 border-0 text-center">
               <div className="card-body px-4 pb-4">
                 <div className="card-img pb-5">
@@ -34,7 +34,7 @@ function services() {
               </div>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4 col-lg-3">
             <div className="card h-100 rounded-4 border-0 text-center">
               <div className="card-body px-4 pb-4">
                 <div className="card-img pb-5">
@@ -52,7 +52,7 @@ function services() {
               </div>
             </div>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4 col-lg-3">
             <div className="card h-100 rounded-4 border-0 text-center">
               <div className="card-body px-4 pb-4">
                 <div className="card-img pb-5">

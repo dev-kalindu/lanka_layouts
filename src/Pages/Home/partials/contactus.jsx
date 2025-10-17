@@ -42,7 +42,7 @@ function contactus() {
       <section id="contact" className="py-5 contact-us-background">
         <div className="container">
           <div className="row contact-us align-items-center">
-            <div className="col-md-6">
+            <div className="col-md-12 col-lg-6 pb-md-4 pb-lg-0">
               <div className="row justify-content-center ">
                 <div className="col-md-7 px-4 px-md-2 mb-5 mb-md-2">
                   <div className="mb-3">
@@ -65,7 +65,7 @@ function contactus() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-12 col-lg-6">
               <div className="bg-white p-4 p-md-5 rounded rounded-4 shadow-sm">
                 <p className="mb-5 text-black fs-4">
                   We'd love to hear from you! <br />

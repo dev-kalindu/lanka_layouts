@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function process() {
+
   return (
     <div>
       <section id="process" className="py-5 bg-white custom-spacing">
@@ -17,9 +18,9 @@ function process() {
             We handle the technical preparation, so you can focus on managing
             your project and communicating with authorities.
           </p>
-          <div className="row g-4 justify-content-center
+          <div className="row g-4 justify-content-center pt-5
           ">
-            <div className="col-md-4">
+            <div className="col-md-4 col-lg-3">
               <div className="card card-border-radius border-0 h-100">
                 <div className="card-body">
                   <div className="crd-img-wrapper text-center">
@@ -44,7 +45,7 @@ function process() {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 col-lg-3">
               <div className="card card-border-radius border-0 h-100 rounded">
                 <div className="card-body">
                   <div className="crd-img-wrapper text-center">
