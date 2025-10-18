@@ -25,7 +25,7 @@ function authorities() {
                 </div>
                 <div className="p-4">
                   <h5 className="fw-bold text-black">{t("authorities_1")}</h5>
-                  <p className="small text-muted">
+                  <p className=" text-muted jost">
                    {t("authorities_1_des")}
                   </p>
                 </div>
@@ -38,7 +38,7 @@ function authorities() {
                 </div>
                 <div className="p-4">
                   <h5 className="fw-bold text-black">{t("authorities_2")}</h5>
-                  <p className="small text-muted">
+                  <p className="jost text-muted">
                     {t("authorities_2_des")}
                   </p>
                 </div>
@@ -51,7 +51,7 @@ function authorities() {
                 </div>
                 <div className="p-4">
                   <h5 className="fw-bold text-black">{t("authorities_3")}</h5>
-                  <p className="small text-muted">
+                  <p className="jost text-muted">
                     {t("authorities_3_des")}
                   </p>
                 </div>
@@ -64,7 +64,7 @@ function authorities() {
                 </div>
                 <div className="p-4">
                   <h5 className="fw-bold text-black">{t("authorities_4")}</h5>
-                  <p className="small text-muted">
+                  <p className="jost text-muted">
                     {t("authorities_4_des")}
                   </p>
                 </div>

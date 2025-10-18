@@ -33,7 +33,7 @@ const { t } = useTranslation();
                   <h4 className="fw-bold text-primary mb-3 pt-4 text-center jost">
                     {t("collaborate_we_do")}
                   </h4>
-                  <ul className="list-unstyled p-2">
+                  <ul className="list-unstyled p-2 jost">
                     <li className="mb-2"><i class="fa-solid fa-circle-check pe-2"></i> {t("collaborate_we_do_1")}</li>
                     <li className="mb-2">
                       <i class="fa-solid fa-circle-check pe-2"></i> {t("collaborate_we_do_2")}
@@ -56,7 +56,7 @@ const { t } = useTranslation();
                     />
                   </div>
                   <h4 className="fw-bold mb-3 pt-4 text-center jost">{t("collaborate_you_do")}</h4>
-                  <ul className="list-unstyled p-2">
+                  <ul className="list-unstyled p-2 jost">
                     <li className="mb-2"><i class="fa-solid fa-circle-minus pe-2"></i> {t("collaborate_you_do_1")}</li>
                     <li className="mb-2"><i class="fa-solid fa-circle-minus pe-2"></i> {t("collaborate_you_do_2")}</li>
                     <li className="mb-2"><i class="fa-solid fa-circle-minus pe-2"></i> {t("collaborate_you_do_3")}</li>
