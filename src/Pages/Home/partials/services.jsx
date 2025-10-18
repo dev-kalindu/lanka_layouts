@@ -25,7 +25,7 @@ function services() {
                 </h5>
                 {/* <div className="custom_uderline border-bottom border-2  border  w-50 my-3"></div> */}
                 <p className="card-text text-muted jost">
-                 {t("service_des")}
+                 {t("service_1_des")}
                 </p>
               </div>
             </div>
