@@ -61,14 +61,19 @@ function Navbar() {
           <button
             className="navbar-toggler"
             type="button"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded= "false"
+            aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
 
           <div
-            className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
-          >
+            className="collapse navbar-collapse"
+          id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto align-items-center nav nav-pills">
               <li className="nav-item me-3">
                 <a href="#scrollservices" className="nav-link fw-semibold">
@@ -83,19 +88,13 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item me-3">
-                <a
-                  href="#scrollauthorities"
-                  className="nav-link fw-semibold"
-                >
+                <a href="#scrollauthorities" className="nav-link fw-semibold">
                   {" "}
                   Advantages
                 </a>
               </li>
               <li className="nav-item me-3">
-                <a
-                  href=""
-                  className="nav-link fw-semibold"
-                >
+                <a href="" className="nav-link fw-semibold">
                   {" "}
                   About Us
                 </a>

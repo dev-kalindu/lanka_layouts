@@ -20,46 +20,43 @@ body {
 .story-script {
   font-family: "Story Script", sans-serif;
 }
-.custom-spacing{
+.custom-spacing {
   padding-top: 5rem !important;
   padding-bottom: 2.5rem !important;
 }
 
-.card-background{
-  background: #F5F9FF;
+.card-background {
+  background: #f5f9ff;
 }
-.custom_uderline{
+.custom_uderline {
   border-color: black !important;
 }
-.footer-div{
-  background: 
-   
-    url('/Images/footer-img1_dropped.jpg');
-  background-size: cover;           
-  background-position: center;     
+.footer-div {
+  background: url("/Images/footer-img1_dropped.jpg");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  
 }
 
-.swal2-container{
+.swal2-container {
   z-index: 9999 !important;
 }
 
-.footer-logo{
+.footer-logo {
   width: 180px;
 }
 
-.nav-link-footer{
+.nav-link-footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.footer-link{
+.footer-link {
   color: #dee2e6;
   cursor: pointer;
 }
 
-.hero-btn:hover{
+.hero-btn:hover {
   background-color: rgba(255, 255, 255, 0.659) !important;
   border-color: black !important;
   color: black !important;
@@ -137,7 +134,7 @@ body {
 } */
 
 .custom-timer-bar {
-   background: #395BCD !important;
+  background: #395bcd !important;
 }
 
 .outer-nav {
@@ -149,11 +146,11 @@ body {
   color: white;
   border-color: white;
   border-radius: 0;
-   transition: 0.2s ease-in-out !important;
+  transition: 0.2s ease-in-out !important;
 }
 
 .custom-btn-2 {
-  background-color: #395BCD;
+  background-color: #395bcd;
   color: white;
   border-color: white;
   border-radius: 0;
@@ -169,7 +166,7 @@ body {
   transition: 0.2s ease-in-out;
 }
 .custom-btn-2:disabled {
-  background-color: #3C5BCB;
+  background-color: #3c5bcb;
 }
 
 /* .call-btn {
@@ -248,7 +245,7 @@ body {
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  background-color: #395BCD;
+  background-color: #395bcd;
   background-size: 70%;
   -webkit-animation: pulse 01s infinite;
 }
@@ -393,7 +390,7 @@ body {
 }
 
 .contact-us-background {
-  background: #F5F9FF;
+  background: #f5f9ff;
   /* background: linear-gradient(
     90deg,
     rgba(63, 140, 244, 1) 17%,
@@ -406,8 +403,14 @@ body {
   .service-section {
     height: auto;
   }
-  .nav-link-footer{
+  .nav-link-footer {
     display: none;
   }
- 
+  .nav-item .nav-link {
+    font-weight: 400 !important;
+  }
+  .navbar-nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
