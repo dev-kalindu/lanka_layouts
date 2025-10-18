@@ -41,6 +41,10 @@ body {
   
 }
 
+.swal2-container{
+  z-index: 9999 !important;
+}
+
 .footer-logo{
   width: 180px;
 }
@@ -121,6 +125,19 @@ body {
     margin-top: 0px !important;
     border-radius: 0% !important;
   }
+  .swal2-popup {
+    margin-top: 5rem !important;
+  }
+}
+
+/* .custom-toast {
+  border: 2px solid #395BCD !important; 
+  border-radius: 10px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+} */
+
+.custom-timer-bar {
+   background: #395BCD !important;
 }
 
 .outer-nav {
@@ -136,7 +153,7 @@ body {
 }
 
 .custom-btn-2 {
-  background-color: black;
+  background-color: #395BCD;
   color: white;
   border-color: white;
   border-radius: 0;
@@ -152,7 +169,7 @@ body {
   transition: 0.2s ease-in-out;
 }
 .custom-btn-2:disabled {
-  background-color: #666666;
+  background-color: #3C5BCB;
 }
 
 /* .call-btn {
@@ -220,7 +237,7 @@ body {
   -moz-border-radius: 100%;
   border-radius: 100%;
   border: 2px solid transparent;
-  opacity: 0.7;
+  opacity: 1;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -231,7 +248,7 @@ body {
   -ms-transform-origin: 50% 50%;
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
-  background-color: #366bfd;
+  background-color: #395BCD;
   background-size: 70%;
   -webkit-animation: pulse 01s infinite;
 }

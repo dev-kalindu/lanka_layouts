@@ -1,13 +1,17 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useTranslation } from "react-i18next";
+import Swal from "sweetalert2";
+import Pic from "/Images/web.png";
 
 function contactus() {
   const { t } = useTranslation();
   const form = useRef();
   const recaptchaRef = useRef();
   const [captchaValid, setCaptchaValid] = useState(false);
+
+  useEffect(() => {});
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,13 +33,51 @@ function contactus() {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Message sent successfully!");
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "success",
+            title: "Message Sent",
+            text: "Your message has been delivered to Lanka Layout.",
+            iconColor: "#395BCD",
+            customClass: {
+              timerProgressBar: "custom-timer-bar",
+            },
+          });
           form.current.reset();
           recaptchaRef.current.reset();
         },
         (error) => {
           console.error(error.text);
-          alert("Failed to send message.");
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            icon: "error",
+            title: "Failed to Send",
+            text: "Something went wrong. Please try again later.",
+            iconColor: "#395BCD",
+            customClass: {
+              timerProgressBar: "custom-timer-bar",
+            },
+          });
         }
       );
   };
@@ -49,18 +91,26 @@ function contactus() {
                 <div className="col-md-7 px-4 px-md-2 mb-5 mb-md-2">
                   <div className="mb-3">
                     <p className="fs-1 mb-3">Contact Us</p>
-                    <p className="mb-4">
-                      {t("contact_us")}
-                    </p>
+                    <p className="mb-4">{t("contact_us")}</p>
                   </div>
                   <div>
                     <div className="mail mb-2">
                       <i class="fa-solid fa-envelope pe-2"></i>
-                      <a className="text-black text-decoration-none" href="mailto:infolankalayouts@gmail.com">infolankalayouts@gmail.com</a>
+                      <a
+                        className="text-black text-decoration-none"
+                        href="mailto:infolankalayouts@gmail.com"
+                      >
+                        infolankalayouts@gmail.com
+                      </a>
                     </div>
                     <div className="tel mb-2">
                       <i class="fa-solid fa-phone pe-2"></i>
-                      <a className="text-black text-decoration-none" href="tel:0712345678">(+94) 71 234 5678</a>
+                      <a
+                        className="text-black text-decoration-none"
+                        href="tel:0712345678"
+                      >
+                        (+94) 71 234 5678
+                      </a>
                     </div>
                   </div>
                 </div>

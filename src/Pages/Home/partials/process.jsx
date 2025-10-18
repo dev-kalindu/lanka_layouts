@@ -20,7 +20,7 @@ const { t } = useTranslation();
           </p>
           <div className="row g-4 justify-content-center pt-5
           ">
-            <div className="col-md-4 col-lg-3">
+            <div className="col-md-5 col-lg-3">
               <div className="card card-border-radius border-0 h-100">
                 <div className="card-body">
                   <div className="crd-img-wrapper text-center">
@@ -45,7 +45,7 @@ const { t } = useTranslation();
                 </div>
               </div>
             </div>
-            <div className="col-md-4 col-lg-3">
+            <div className="col-md-5 col-lg-3">
               <div className="card card-border-radius border-0 h-100 rounded">
                 <div className="card-body">
                   <div className="crd-img-wrapper text-center">
